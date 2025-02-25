@@ -1,0 +1,164 @@
+.content{
+    max-width: 1000px;
+    min-height: 500px;
+    // background-color: cadetblue;
+    margin: 0 auto;
+
+    h2{
+        // background-color: firebrick;
+        font-size: 40px;
+        font-weight: normal;
+        font-family: "proxima-nova", sans-serif;
+        border-bottom: 2px solid black  ;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        }
+
+    .top-container{
+        margin-top: 10px;
+        min-height: 200px;
+        height: 100%;
+        // background-color: lightcoral;
+
+        .quote{
+            width: 80%;
+            height: 15%;
+            // background-color: seagreen;
+            display: flex;
+            margin-bottom: 20px;
+
+
+
+            .quote-image-holder{
+                width: 33%;
+                height: 150px;
+                // background-color: skyblue;
+
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .quote-text{
+                width: 50%;
+                height: 150px;
+                // background-color: deeppink;
+                margin: auto;
+                position: relative;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: lighter;
+
+
+                }
+                .author{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    font-size: 20px;
+                    font-family: proxima-nova, sans-serif;
+                    color: #79ADDC;
+                }
+
+            }
+        }
+
+    }
+    .bottom-container{
+        min-height: 200px;
+        // background-color: rgb(128, 148, 240);
+
+        .quote{
+            width: 80%;
+            height: 10%;
+            // background-color: seagreen;
+            display: flex;
+            margin-bottom: 20px;
+
+
+
+            .quote-image-holder{
+                width: 33%;
+                height: 150px;
+                // background-color: skyblue;
+
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            .quote-text{
+                width: 50%;
+                height: 150px;
+                // background-color: deeppink;
+                margin: auto;
+                position: relative;
+                font-size: 16px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: lighter;
+
+
+                
+                .author{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    font-size: 20px;
+                    font-family: proxima-nova, sans-serif;
+                    color: #79ADDC;
+                }
+
+            }
+        }
+}
+
+
+@media all and (max-width: 676px) {
+    .content {
+
+        .top-container{
+            height: 90%;
+
+            .quote{
+                flex-direction: column;
+                width: 260px;
+                margin: 0 auto 20px auto;
+
+                .quote-text{
+                    margin-top: 20px;
+                    width: 100%;
+
+                }
+                .quote-image-holder{
+                    margin: auto;
+                }
+            }
+        }
+        .bottom-container{
+            .quote{
+                flex-direction: column;
+                width: 260px;
+                margin: 0 auto 20px auto;
+
+                .quote-text{
+                    margin-top: 20px;
+                    width: 100%;
+
+                }
+                .quote-image-holder{
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+}

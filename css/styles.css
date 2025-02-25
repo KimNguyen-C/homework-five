@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+}
+
+.nav-container {
+  width: 100%;
+  height: 90px;
+}
+.nav-container nav {
+  height: 90px;
+  border-bottom: solid 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+.nav-container nav .logo {
+  width: 150px;
+  height: 50px;
+}
+.nav-container nav .links {
+  max-width: auto;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container nav .links a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.content {
+  max-width: 1000px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+.content h2 {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "proxima-nova", sans-serif;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.content .top-container {
+  margin-top: 10px;
+  min-height: 200px;
+  height: 100%;
+}
+.content .top-container .quote {
+  width: 80%;
+  height: 15%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.content .top-container .quote .quote-image-holder {
+  width: 33%;
+  height: 150px;
+}
+.content .top-container .quote .quote-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content .top-container .quote .quote-text {
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+.content .top-container .quote .author {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  font-family: proxima-nova, sans-serif;
+  color: #79ADDC;
+}
+
+.bottom-container {
+  min-height: 200px;
+}
+.bottom-container .quote {
+  width: 80%;
+  height: 10%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.bottom-container .quote .quote-image-holder {
+  width: 33%;
+  height: 150px;
+}
+.bottom-container .quote .quote-image-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom-container .quote .quote-text {
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+.bottom-container .quote .quote-text .author {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  font-family: proxima-nova, sans-serif;
+  color: #79ADDC;
+}
+
+@media all and (max-width: 676px) {
+  .content .top-container {
+    height: 90%;
+  }
+  .content .top-container .quote {
+    flex-direction: column;
+    width: 260px;
+    margin: 0 auto 20px auto;
+  }
+  .content .top-container .quote .quote-text {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .content .top-container .quote .quote-image-holder {
+    margin: auto;
+  }
+  .content .bottom-container .quote {
+    flex-direction: column;
+    width: 260px;
+    margin: 0 auto 20px auto;
+  }
+  .content .bottom-container .quote .quote-text {
+    margin-top: 20px;
+    width: 100%;
+  }
+  .content .bottom-container .quote .quote-image-holder {
+    margin: auto;
+  }
+}
+.about {
+  text-align: left;
+  padding: 10% 0;
+  display: block;
+}
+.about h1 {
+  font-size: 60px;
+  font-weight: normal;
+  font-family: "proxima-nova", sans-serif;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.about .about-text {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: lighter;
+}
+
+footer {
+  max-width: 100%;
+  height: 100px;
+  background-color: #79ADDC;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 6%;
+}
+footer .footer-logo {
+  width: 100px;
+  height: fit-content;
+  display: flex;
+}
+footer .copyright {
+  width: auto;
+  height: fit-content;
+  font-size: 12px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: auto;
+}
+footer .social-logo {
+  height: fit-content;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  color: white;
+}
