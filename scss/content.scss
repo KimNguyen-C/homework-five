@@ -31,7 +31,7 @@
 
 
             .quote-image-holder{
-                width: 33%;
+                width: 260px;
                 height: 150px;
                 // background-color: skyblue;
 
@@ -48,7 +48,7 @@
                 width: 50%;
                 height: 150px;
                 // background-color: deeppink;
-                margin: auto;
+                margin: auto 20px;
                 position: relative;
                 font-size: 16px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -83,7 +83,7 @@
 
 
             .quote-image-holder{
-                width: 33%;
+                width: 260px;
                 height: 150px;
                 // background-color: skyblue;
 
@@ -99,15 +99,13 @@
             .quote-text{
                 width: 50%;
                 height: 150px;
-                // background-color: deeppink;
-                margin: auto;
+                margin: auto 20px;
                 position: relative;
                 font-size: 16px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-weight: lighter;
 
 
-                
                 .author{
                     position: absolute;
                     bottom: 0;

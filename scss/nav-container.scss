@@ -27,9 +27,10 @@ nav{
 
   .links{
       // background-color: darkgoldenrod;
-      max-width: auto;
-      width: 400px;
+      max-width: 400px;
+      width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
 
    a{

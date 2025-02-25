@@ -38,9 +38,10 @@ h1, h2, h3, h4, h5, h6, p {
   height: 50px;
 }
 .nav-container nav .links {
-  max-width: auto;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .nav-container nav .links a {
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 20px;
 }
 .content .top-container .quote .quote-image-holder {
-  width: 33%;
+  width: 260px;
   height: 150px;
 }
 .content .top-container .quote .quote-image-holder img {
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, h6, p {
 .content .top-container .quote .quote-text {
   width: 50%;
   height: 150px;
-  margin: auto;
+  margin: auto 20px;
   position: relative;
   font-size: 16px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -112,7 +113,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 20px;
 }
 .bottom-container .quote .quote-image-holder {
-  width: 33%;
+  width: 260px;
   height: 150px;
 }
 .bottom-container .quote .quote-image-holder img {
@@ -124,7 +125,7 @@ h1, h2, h3, h4, h5, h6, p {
 .bottom-container .quote .quote-text {
   width: 50%;
   height: 150px;
-  margin: auto;
+  margin: auto 20px;
   position: relative;
   font-size: 16px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
